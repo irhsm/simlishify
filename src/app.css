@@ -1,0 +1,3 @@
+@import url("./styles/customs.css");
+@import 'tailwindcss';
+@plugin "daisyui";
