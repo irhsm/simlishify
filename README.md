@@ -1,5 +1,7 @@
 # simlishify
 
+![Emotes](src/lib/assets/favicon.svg)
+
 A Svelte app that transforms your lyrics into playful, nonsensical Simlish!
 
 ## Run the app
