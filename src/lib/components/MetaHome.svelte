@@ -20,9 +20,4 @@
   <meta name="twitter:description" content="Fast and fun transliterations—perfect for demos, fiction, and nonsense text effects." />
   <meta name="twitter:image" content={`${website}/twitter-image.jpg`} />
   <meta name="twitter:site" content="@icydviz" />
-
-  <!-- <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" /> -->
-  <!-- <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" /> -->
-
-  <!-- <meta name="msvalidate.01" content="" /> -->
 </svelte:head>
