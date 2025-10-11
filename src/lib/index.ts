@@ -1,4 +1,4 @@
-export const website = 'https://simlishify.lol'
+export const website = 'https://www.simlishify.cc'
 
 export function isDigit(char: string): boolean {
   return /^[0-9]$/.test(char)
