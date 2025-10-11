@@ -2,12 +2,12 @@
   import { onMount } from 'svelte'
   import AppBar from '$components/AppBar.svelte'
   import ArrowUp from '$components/icons/ArrowUp.svelte'
-  import Menu from '$components/icons/Menu.svelte'
   import { wordBank } from '$lib/wordBank'
   import { simlish } from '$lib/simlish'
   import { SimlishifyAppPageState } from './state.svelte'
   import { app } from '$lib/shared.svelte'
   import { isEmptyString } from '$lib'
+  import Simlishify from '$icons/Simlishify.svelte'
 
   let pageState = new SimlishifyAppPageState(),
     input = $state<string>(''),
@@ -42,15 +42,15 @@
     <div class="desktop-side-bar border-base-content/5 hidden p-2 md:block">
       <!-- Desktop side bar -->
       <header>
-        <label for="my-drawer" class="btn btn-square btn-ghost w-full">
-          <Menu />
-        </label>
+        <button class="btn btn-square btn-ghost w-full">
+          <Simlishify />
+        </button>
       </header>
     </div>
     <main class="grid-app-bar-auto-status-bar">
       <AppBar />
-      <div class="bg-base-200 relative" bind:this={willScrollEl}>
-        <div class="pb-input overflow-y-auto p-2" style={`max-height: ${scrollElHeight}px;`}>
+      <div class="bg-base-200 hero-pattern-doodle relative" bind:this={willScrollEl}>
+        <div class="pb-input relative z-10 overflow-y-auto p-2" style={`max-height: ${scrollElHeight}px;`}>
           <ul class="list-output">
             {#each outputs as output}
               <li>
