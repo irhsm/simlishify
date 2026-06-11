@@ -13,5 +13,5 @@ export function isSquareBracketed(str: string): boolean {
 }
 
 export function isEmptyString(str: string): boolean {
-  return str === ''
+  return !str || str.trim() === ''
 }
