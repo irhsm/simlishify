@@ -1,11 +1,11 @@
 <script lang="ts">
-  import Menu from './icons/Menu.svelte'
+  import MenuOpen from './svg/MenuOpen.svelte'
 </script>
 
-<div class="navbar bg-base-100 shadow-sm md:hidden">
+<div class="navbar bg-base-100 shadow-sm">
   <div class="flex-none">
-    <label for="my-drawer" class="btn btn-square btn-ghost">
-      <Menu />
+    <label for="my-drawer" class="btn btn-square">
+      <MenuOpen class="h-5 w-5" />
     </label>
   </div>
   <div class="flex-1">
